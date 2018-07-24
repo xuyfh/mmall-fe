@@ -51,7 +51,7 @@ var _mm = {
         alert(msg || '操作成功！');
     },
     //错误提示
-    errorTips: function(){
+    errorTips: function(msg){
         alert(msg || '哪里不对了~');
     },
     //字段的验证，支持非空、手机号、邮箱的验证
@@ -72,7 +72,7 @@ var _mm = {
     },
     //统一登录状态
     doLogin :function(){
-        window.location.href = './login.html?redirct ='+encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirct ='+encodeURIComponent(window.location.href);
     },
     goHome : function(){
         window.location.href = './index.html';
