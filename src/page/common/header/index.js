@@ -5,13 +5,14 @@ var _mm = require('util/mm.js');
 //通用页面头部
 var header = {
     init : function(){
+        this.onLoad();
         this.bindEvent();   
     },
-    onload: function(){
-        var ketword = _mm.getUrlParam('keyword');
+    onLoad: function(){
+        var keyword = _mm.getUrlParam('keyword');
         //keyword存在，则回填输入框
         if(keyword){
-            $('#search-input').val(ketword);
+            $('#search-input').val(keyword);
         };
     },
     bindEvent : function(){
